@@ -68,7 +68,7 @@ All classifiers achieved strong performance, reflecting the structured nature of
 
 ### ✅ Accuracy Comparison
 
-![Accuracy Comparison](Results/accuracy_plot.png)
+![Accuracy Comparison](Results/accuracy.png)
 
 ---
 
@@ -76,15 +76,15 @@ All classifiers achieved strong performance, reflecting the structured nature of
 
 **Random Forest**
 
-![Random Forest Confusion Matrix](Results/rf_cm.png)
+![Random Forest Confusion Matrix](Results/CM-RF.png)
 
 **Support Vector Machine (SVM)**
 
-![SVM Confusion Matrix](Results/svm_cm.png)
+![SVM Confusion Matrix](Results/CM-SVM.png)
 
 **Logistic Regression**
 
-![Logistic Regression Confusion Matrix](Results/lr_cm.png)
+![Logistic Regression Confusion Matrix](Results/CM-LR.png)
 
 ---
 
@@ -96,3 +96,38 @@ Five-fold cross-validation was conducted to validate model stability and reliabi
 - Minimal variation across folds
 
 This confirms that model performance is not dependent on a particular data split.
+### Requirements
+
+Install dependencies:
+
+```bash
+pip install pandas numpy scikit-learn matplotlib nltk
+```
+ 
+## 📁 Repository Structure
+```text
+├── b23cm1021_prob4.py
+├── README.md
+├── images
+│   ├── accuracy_plot.png
+│   ├── rf_cm.png
+│   ├── svm_cm.png
+│   └── lr_cm.png
+```
+## ⚠️ Limitations
+
+The dataset contains clean, professionally written news articles
+
+Categories exhibit highly discriminative vocabulary
+
+Performance may decrease on noisy or ambiguous real-world text
+
+## 🔮 Future Improvements
+
+Evaluate performance on noisy datasets
+
+Incorporate contextual embeddings (Word2Vec, BERT)
+
+Extend to multi-class classification
+
+Perform hyperparameter tuning
